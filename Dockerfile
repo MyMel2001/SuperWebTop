@@ -10,7 +10,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     mkdir -p /etc/s6-overlay/s6-rc.d/sunshine && \
     echo "#!/usr/bin/with-contenv bash" > /etc/s6-overlay/s6-rc.d/sunshine/run && \
-    echo "exec /usr/bin/sunshine --no-gui" >> /etc/s6-overlay/s6-rc.d/sunshine/run && \
+    echo "exec /usr/bin/sunshine" >> /etc/s6-overlay/s6-rc.d/sunshine/run && \
     chmod +x /etc/s6-overlay/s6-rc.d/sunshine/run && \
     echo "longrun" > /etc/s6-overlay/s6-rc.d/sunshine/type && \
     touch /etc/s6-overlay/s6-rc.d/user/contents.d/sunshine
