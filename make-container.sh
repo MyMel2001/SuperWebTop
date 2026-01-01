@@ -13,4 +13,5 @@ docker run -d \
   -v "/media/devmon/External 8TB:/mnt/8tb" \
   -v /mnt/4tb_Internal:/mnt/4tb \
   -v /mnt/remote_sftp:/mnt/remote_storage \
+  --privileged \
   my-gpu-desktop
